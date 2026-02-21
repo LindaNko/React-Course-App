@@ -1,18 +1,18 @@
 import './App.css'
 
-function Greeting() {
-  return <h1>Hello, World! I am Link</h1>;
+function Greeting({name,career, age}) {
+  return (
+    <h1> Hello, I am {name} a {career} and I am {age} years old. </h1>
+  );
 }
 //Component = is a function that returns JSX (JavaScript XML) which describes the UI of the component.
 function App() {
- const career= "Software Engineer";
- const age = 33;
 
   return (
     <div>
-      
-        <Greeting />
-        <p> A {career} and I am {age} years old.</p>
+        
+      <Greeting name={"Link"} career={"software engineer"} age={30}/>
+      <Greeting name={"John"} career={"Pilot"} age={25}/>
       
     </div>
   );
