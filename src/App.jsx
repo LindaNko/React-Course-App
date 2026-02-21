@@ -1,16 +1,21 @@
 import './App.css'
 
+function Greeting() {
+  return <h1>Hello, World! I am Link</h1>;
+}
+//Component = is a function that returns JSX (JavaScript XML) which describes the UI of the component.
 function App() {
- const name= 'Link';
- const age = 20;
+ const career= "Software Engineer";
+ const age = 33;
 
   return (
     <div>
-      <h1>Welcome to React I am {name}</h1>
-      <p>This is a simple React application.</p>
-      <p>Age: {age}</p>
+      
+        <Greeting />
+        <p> A {career} and I am {age} years old.</p>
+      
     </div>
-  )
+  );
 }
 
 export default App
