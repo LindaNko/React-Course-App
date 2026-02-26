@@ -7,12 +7,12 @@ function Greeting({name,career, age}) {
 }
 //Component = is a function that returns JSX (JavaScript XML) which describes the UI of the component.
 function App() {
-
+  const showGreeting = true;
   return (
     <div>
         
-      <Greeting name={"Link"} career={"software engineer"} age={30}/>
-      <Greeting name={"John"} career={"Pilot"} age={25}/>
+      {showGreeting && <Greeting name={"Link"} career={"software engineer"} age={30}/>}
+      {showGreeting && <Greeting name={"John"} career={"Pilot"} age={25}/>}
       
     </div>
   );
